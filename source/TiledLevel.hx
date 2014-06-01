@@ -20,8 +20,8 @@ class TiledLevel extends TiledMap {
     // used to draw tiles in that layer (without file extension). The image file must be located in the directory specified bellow.
     private inline static var c_PATH_LEVEL_TILESHEETS = "assets/data/";
 
-    public var foregroundTiles:FlxGroup; // 前面レイヤー
-    public var backgroundTiles:FlxGroup; // 背面レイヤー
+    public var foregroundTiles:FlxGroup; // 前面レイヤー(描画用)
+    public var backgroundTiles:FlxGroup; // 背面レイヤー(描画用)
     public var player:Player; // プレイヤー
 
     private var collidableTileLayers:Array<FlxTilemap>; // コリジョンレイヤー
